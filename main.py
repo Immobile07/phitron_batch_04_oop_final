@@ -49,7 +49,7 @@ class user:
             if bnk.bankrupt==True:
                 print("Bank is bankrupted. You can't take the loan.")
             elif bnk.loan==False:
-                print("Bank doesn;t currently give you loan")
+                print("Bank doesn't currently give you loan")
             else:
                 print("The limit for your loan has exceeded.")
     def deposit(self,amount,bnk):
@@ -196,7 +196,7 @@ Press any key to exit''')
                         z=user(name,email,address,account_type)
                         naam.add_user(z)
                         print("You have successfully created your account.")
-                        print(f'Your account id is: {z.account_no}')
+                        print(f'Your useername: {z.name} and your account id is: {z.account_no}')
                     elif usr_entry ==2:
                         acc_no=int(input("Enter the account no: "))
                         admin.delete_account(acc_no,naam)
@@ -231,7 +231,7 @@ Press any key to exit''')
                     z=user(name,email,address,account_type)
                     naam.add_user(z)
                     print("You have successfully created your account.")
-                    print(f'Your account id is: {z.account_no}')
+                    print(f'Your useername: {z.name} and your account id is: {z.account_no}')
                 
                 elif usr_entry==2:
                     acc=int(input("Your account number:"))
